@@ -1,0 +1,25 @@
+  +-------------+       +-------------+
+  |    Users    |       |  Activities |
+  +-------------+       +-------------+
+  | UserID (PK) |1----<| UserID (FK) |
+  |  Username   |       | ActivityID  |1----<+
+  |   Email     |       | ActivityType|     ||
+  |  Password   |       | StartDateTime|    ||
+  |   ...       |       | EndDateTime|      ||
+  +-------------+       | Duration   |      ||
+                        | Distance   |      ||
+                        | CaloriesBurned |   ||
+                        +-------------+      ||
+                                              ||
+                                              ||
+                        +-------------+      ||
+                        |   Workouts  |      ||
+                        +-------------+      ||
+                        | WorkoutID(PK)|-----+
+                        | UserID (FK) |
+                        | StartDateTime|
+                        | EndDateTime  |
+                        | Duration     |
+                        | CaloriesBurned |
+                        | ...          |
+                        +--------------+
